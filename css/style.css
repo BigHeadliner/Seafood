@@ -540,7 +540,13 @@ body {
 @media (max-width: 650px){  
   .product__content{ 
      width:100%;
-  }
+  } 
+ .seafood-box__items{ 
+   display:block;
+ }   
+ .seafood-box { 
+   display:none;
+ } 
 } 
   
 @media (max-width: 600px){ 
