@@ -441,8 +441,14 @@ body {
    display:block; 
    height: 4px; 
    background-color:#001E64;
+} 
+
+@media (max-width: 1160px) { 
+  .product__name{  
+    width:350px;
+  } 
 }
- 
+
 @media (max-width: 1000px) {  
     /* header */
   .menu__list { 
@@ -474,8 +480,50 @@ body {
     padding:20px 0; 
     display:block;  
     text-align:center;
+  } 
+  .product__name{  
+    width:250px;
   }
-} 
+}  
+@media (max-width: 890px) { 
+   .product__inner{ 
+     display:block;
+   } 
+   .product__content{ 
+     margin:0 auto;
+   } 
+   .product__name{ 
+     width:100%;  
+     padding-top:0; 
+     margin-bottom:80px;
+   } 
+   .product__name-item + .product__name-item{ 
+     margin-top:0;  
+     height: 38px;
+
+   } 
+   .product__name-item.slik-current { 
+     line-height: 44px;
+   } 
+   .product__name .slick-dots{  
+     left:0; 
+     right:0; 
+     flex-direction:row;  
+     justify-content:center;
+   } 
+   .product__name .slick-dots button{ 
+      width:10px; 
+      height:10px; 
+      font-size: 0; 
+      padding: 0; 
+      border-radius:50%; 
+      background-color:#C4C4C4; 
+      margin:0 5px;
+   } 
+   .product__name .slick-active button{ 
+    background-color:#001E64;
+   }
+}
  
 @media (max-width: 745px) {   
     /* header */ 
@@ -487,7 +535,22 @@ body {
    text-align:center;
  }   
 
+}  
+ 
+@media (max-width: 650px){  
+  .product__content{ 
+     width:100%;
+  }
 } 
+  
+@media (max-width: 600px){ 
+  .product__content-box{ 
+   display:block;
+  } 
+  .product__content-list { 
+    width:100%;
+  }
+}
  
 @media (max-width: 470px){ 
    /* header */  
@@ -497,16 +560,22 @@ body {
    .slick-dots{ 
     left:5px;
    } 
-   .slik-prev, 
-   .slik-next { 
+   .sliсk-prev, 
+   .slick-next { 
      left:9px;
    }   
-   .header__content-btn { 
+   .header__content-btn{ 
      margin-left:50px;
    }  
    .title{ 
      font-size:34px; 
      line-height:44px;
+   } 
+   .product__content-btn{ 
+    padding: 12px 55px;
+   } 
+   .product{ 
+     padding-top:50px;
    }
 
 } 
@@ -534,5 +603,8 @@ body {
    } 
   .header__content-btn{ 
     margin-left: 0;
-  } 
+  }  
+  .product__name-item.slick-current { 
+    font-size: 32px;
+  }
 }
